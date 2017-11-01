@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.queen.saediproject.Main2Activity">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#555">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/maxresdefault"
+            app:border_width="1dp"
+            android:layout_above="@+id/textabove"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:id="@+id/textabove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textabove2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Good Morning!"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textabove2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:text="Have An Amazing Day!"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/my_button1"
+            android:padding="16dp"
+            android:text="How are you feeling today? +"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relative1"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="18dp"
+        android:text="Let's see my agenda"
+        android:textColor="@color/skyblue"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="16dp"
+        android:background="#888" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view"
+        android:padding="8dp"
+        android:text="Meeting at 3pm with Rakura Tea"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text2"
+        android:background="#888" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/View2"
+        android:padding="8dp"
+        android:text="Complete Serene Resort Brochure Design"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text3"
+        android:background="#888" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/View3"
+        android:padding="8dp"
+        android:text="Brief team on new concept designs"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/View4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text4"
+        android:background="#888" />
+
+    <TextView
+
+        android:id="@+id/text5"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/View4"
+        android:background="#32C3"
+        android:padding="8dp"
+        android:text="Handover at 6pm today"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/View5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text5"
+        android:background="#888" />
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/View5"
+        android:background="#32CD32"
+        android:padding="8dp"
+        android:text="Add a new task  +"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+</RelativeLayout>
+
+
